@@ -30,7 +30,7 @@ const Navbar = () => {
             >
               <li>
                 <a className="flex" href="">
-                  <span className="mx-2 font-semibold">6000000</span>
+                  <span className="mx-2 font-semibold">600000000</span>
                   <span className="flex items-center font-semibold">
                     {" "}
                     Coins <img className="h-5 mx-2" src={coin} alt="" />
