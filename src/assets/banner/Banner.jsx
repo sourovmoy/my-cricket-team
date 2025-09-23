@@ -11,7 +11,7 @@ const Banner = () => {
         </h3>
         <p className="my-3">Beyond Boundaries Beyond Limits</p>
 
-        <button className="btn border-3 mb-10 border-white  bg-[#E7FE29] text-black font-semibold rounded-2xl hover:scale-[1.01]">
+        <button className="btn mb-10 bg-[#E7FE29] text-black font-semibold rounded-2xl hover:scale-[1.01]  outline-solid outline-[#E7FE29]">
           Claim Free Credit
         </button>
       </div>
