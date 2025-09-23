@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Virat Kohli",
+    "image": "https://example.com/images/virat_kohli.jpg",
+    "price": 1500000,
+    "batting_style": "Right-hand batsman",
+    "bowling_style": "Right-arm medium"
+  },
+  {
+    "id": 2,
+    "name": "Rohit Sharma",
+    "image": "https://example.com/images/rohit_sharma.jpg",
+    "price": 1400000,
+    "batting_style": "Right-hand batsman",
+    "bowling_style": "Right-arm off break"
+  },
+  {
+    "id": 3,
+    "name": "MS Dhoni",
+    "image": "https://example.com/images/ms_dhoni.jpg",
+    "price": 1200000,
+    "batting_style": "Right-hand batsman",
+    "bowling_style": "Right-arm medium"
+  },
+  {
+    "id": 4,
+    "name": "Jasprit Bumrah",
+    "image": "https://example.com/images/jasprit_bumrah.jpg",
+    "price": 1100000,
+    "batting_style": "Right-hand batsman",
+    "bowling_style": "Right-arm fast"
+  },
+  {
+    "id": 5,
+    "name": "Ravindra Jadeja",
+    "image": "https://example.com/images/ravindra_jadeja.jpg",
+    "price": 1000000,
+    "batting_style": "Left-hand batsman",
+    "bowling_style": "Left-arm orthodox spin"
+  },
+  {
+    "id": 6,
+    "name": "KL Rahul",
+    "image": "https://example.com/images/kl_rahul.jpg",
+    "price": 900000,
+    "batting_style": "Right-hand batsman",
+    "bowling_style": "Right-arm medium"
+  },
+  {
+    "id": 7,
+    "name": "Hardik Pandya",
+    "image": "https://example.com/images/hardik_pandya.jpg",
+    "price": 850000,
+    "batting_style": "Right-hand batsman",
+    "bowling_style": "Right-arm fast medium"
+  },
+  {
+    "id": 8,
+    "name": "Shubman Gill",
+    "image": "https://example.com/images/shubman_gill.jpg",
+    "price": 800000,
+    "batting_style": "Right-hand batsman",
+    "bowling_style": "Right-arm off break"
+  },
+  {
+    "id": 9,
+    "name": "Rishabh Pant",
+    "image": "https://example.com/images/rishabh_pant.jpg",
+    "price": 750000,
+    "batting_style": "Left-hand batsman",
+    "bowling_style": "Right-arm medium"
+  },
+  {
+    "id": 10,
+    "name": "Yuzvendra Chahal",
+    "image": "https://example.com/images/yuzvendra_chahal.jpg",
+    "price": 700000,
+    "batting_style": "Right-hand batsman",
+    "bowling_style": "Right-arm leg spin"
+  },
+  {
+    "id": 11,
+    "name": "Suryakumar Yadav",
+    "image": "https://example.com/images/suryakumar_yadav.jpg",
+    "price": 680000,
+    "batting_style": "Right-hand batsman",
+    "bowling_style": "Right-arm medium"
+  },
+  {
+    "id": 12,
+    "name": "Mohammed Shami",
+    "image": "https://example.com/images/mohammed_shami.jpg",
+    "price": 650000,
+    "batting_style": "Right-hand batsman",
+    "bowling_style": "Right-arm fast"
+  }
+]

@@ -51,25 +51,25 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <img className="w-[5vw] " src={logo} alt="" />
+          <img className="w-[10vw] md:w-[5vw] " src={logo} alt="" />
         </div>
 
         <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li className="font-bold">
+            <li className="font-bold hover:scale-[1.02]">
               <a>Home</a>
             </li>
-            <li className="font-bold">
+            <li className="font-bold hover:scale-[1.02]">
               <a>Fixture</a>
             </li>
-            <li className="font-bold">
+            <li className="font-bold hover:scale-[1.02]">
               <a>Teams</a>
             </li>
             <li>
-              <a className="font-bold">Schedules</a>
+              <a className="font-bold hover:scale-[1.02]">Schedules</a>
             </li>
             <li>
-              <a className="flex" href="">
+              <a className="flex bg-gray-800">
                 <span className="mx-2 font-semibold">6000000</span>
                 <span className="flex items-center font-semibold">
                   {" "}
