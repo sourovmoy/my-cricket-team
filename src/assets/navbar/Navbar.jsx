@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../images/logo.png";
 import coin from "../images/coin.png";
-const Navbar = () => {
+const Navbar = ({ amount }) => {
   return (
     <div>
       <div className="navbar bg-base-100">
@@ -28,25 +28,24 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              <li>
+              <li className="bg-gray-800 rounded-lg mb-1">
                 <a className="flex" href="">
-                  <span className="mx-2 font-semibold">600000000</span>
+                  <span className="mx-2 font-semibold">{amount}</span>
                   <span className="flex items-center font-semibold">
-                    {" "}
                     Coins <img className="h-5 mx-2" src={coin} alt="" />
                   </span>
                 </a>
               </li>
-              <li>
+              <li className="bg-gray-800 rounded-lg mb-1">
                 <a>Home</a>
               </li>
-              <li>
+              <li className="bg-gray-800 rounded-lg mb-1">
                 <a>Fixture</a>
               </li>
-              <li>
+              <li className="bg-gray-800 rounded-lg mb-1">
                 <a>Teams</a>
               </li>
-              <li>
+              <li className="bg-gray-800 rounded-lg mb-1">
                 <a>Schedules</a>
               </li>
             </ul>
@@ -70,7 +69,7 @@ const Navbar = () => {
             </li>
             <li>
               <a className="flex bg-gray-800">
-                <span className="mx-2 font-semibold">6000000</span>
+                <span className="mx-2 font-semibold">{amount}</span>
                 <span className="flex items-center font-semibold">
                   {" "}
                   Coins <img className="h-5 mx-2" src={coin} alt="" />

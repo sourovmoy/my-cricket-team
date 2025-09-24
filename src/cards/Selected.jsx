@@ -1,16 +1,12 @@
 import React from "react";
+import SelectedPlayer from "./SelectedPlayer";
 
-const Selected = ({ player }) => {
+const Selected = ({ choosePlayer }) => {
   return (
     <div>
-      <div>
-        <img className="bg-white h-15 w-15" src="" alt="" />
-        <div>
-          <h3>name</h3>
-          <p>left hand batsman</p>
-        </div>
-      </div>
-      <a href="">❌</a>
+      {choosePlayer.map((player) => (
+        <SelectedPlayer player={player}></SelectedPlayer>
+      ))}
     </div>
   );
 };

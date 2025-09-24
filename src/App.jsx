@@ -7,13 +7,17 @@ import Container from "./Container";
 import Footer from "./footer/footer";
 import Selected from "./cards/Selected";
 
-const players = fetch("/public/players.json").then((res) => res.json());
+const players = fetch("/players.json").then((res) => res.json());
 function App() {
   const [toggle, setToggle] = useState(true);
+  const [amount, setAmount] = useState(600000000);
+  const [choosePlayer, setChoosePlayer] = useState([]);
+  console.log(choosePlayer);
+
   return (
     <>
       <Container>
-        <Navbar></Navbar>
+        <Navbar amount={amount}></Navbar>
       </Container>
       <Container>
         <Banner></Banner>
@@ -48,14 +52,22 @@ function App() {
       {toggle === true ? (
         <Container>
           <Suspense
-            fallback={<span className="loading loading-bars loading-xl"></span>}
+            fallback={
+              <span className="loading loading-bars loading-xl flex mx-auto justify-center items-center"></span>
+            }
           >
-            <Card players={players}></Card>
+            <Card
+              setAmount={setAmount}
+              amount={amount}
+              players={players}
+              choosePlayer={choosePlayer}
+              setChoosePlayer={setChoosePlayer}
+            ></Card>
           </Suspense>
         </Container>
       ) : (
         <Container>
-          <Selected></Selected>
+          <Selected choosePlayer={choosePlayer}></Selected>
         </Container>
       )}
 
