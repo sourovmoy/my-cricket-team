@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import img from "../assets/images/Group.png";
+import { toast } from "react-toastify";
 
 const PlayersCard = ({
   player,
@@ -11,7 +12,7 @@ const PlayersCard = ({
   const [click, setClick] = useState(false);
   const restAmount = (playerData) => {
     if (amount < playerData.price) {
-      alert("Inefficient Coins 🪙");
+      toast("Inefficient Coins 🪙");
       return;
     }
     setClick(true);

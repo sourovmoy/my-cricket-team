@@ -6,6 +6,7 @@ import Card from "./cards/card";
 import Container from "./Container";
 import Footer from "./footer/footer";
 import Selected from "./cards/Selected";
+import { ToastContainer } from "react-toastify";
 
 const players = fetch("/players.json").then((res) => res.json());
 function App() {
@@ -82,6 +83,8 @@ function App() {
       )}
 
       <Footer></Footer>
+
+      <ToastContainer />
     </>
   );
 }
