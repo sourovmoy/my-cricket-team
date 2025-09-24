@@ -16,6 +16,7 @@ function App() {
   const removeBtn = (p) => {
     const filteredPlayer = choosePlayer.filter((player) => player.id !== p.id);
     setChoosePlayer(filteredPlayer);
+    setAmount(amount + p.price);
   };
 
   return (
