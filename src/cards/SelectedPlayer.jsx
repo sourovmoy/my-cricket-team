@@ -1,6 +1,9 @@
 import React from "react";
 
-const SelectedPlayer = ({ player }) => {
+const SelectedPlayer = ({ player, removeBtn }) => {
+  const handelClick = () => {
+    removeBtn(player);
+  };
   return (
     <div className="flex justify-between shadow-2xl p-6 mb-5 items-center">
       <div className="flex items-center gap-10">
@@ -14,7 +17,11 @@ const SelectedPlayer = ({ player }) => {
           <p className="text-xl font-semibold">{player.batting_style}</p>
         </div>
       </div>
-      <a href="">❌</a>
+      <img
+        onClick={handelClick}
+        src="https://i.ibb.co.com/xxYpkCF/Vector.png"
+        alt=""
+      />
     </div>
   );
 };

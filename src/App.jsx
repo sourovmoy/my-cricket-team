@@ -12,7 +12,11 @@ function App() {
   const [toggle, setToggle] = useState(true);
   const [amount, setAmount] = useState(600000000);
   const [choosePlayer, setChoosePlayer] = useState([]);
-  console.log(choosePlayer);
+
+  const removeBtn = (p) => {
+    const filteredPlayer = choosePlayer.filter((player) => player.id !== p.id);
+    setChoosePlayer(filteredPlayer);
+  };
 
   return (
     <>
@@ -26,7 +30,9 @@ function App() {
         <div className="md:flex items-center justify-between my-10">
           <div>
             <h3 className="text-2xl font-bold text-center md:text-left">
-              {toggle ? "Available Players" : "Selected Player"}
+              {toggle
+                ? "Available Players"
+                : `Selected Player ${choosePlayer.length}/6`}
             </h3>
           </div>
           <div className="items-center text-center mt-10 md:my-0">
@@ -44,7 +50,7 @@ function App() {
                 toggle === false ? "bg-[#E7FE29] text-black" : "text-white"
               }`}
             >
-              Selected(<span>0</span>)
+              Selected(<span>{choosePlayer.length}</span>)
             </button>
           </div>
         </div>
@@ -67,7 +73,10 @@ function App() {
         </Container>
       ) : (
         <Container>
-          <Selected choosePlayer={choosePlayer}></Selected>
+          <Selected
+            removeBtn={removeBtn}
+            choosePlayer={choosePlayer}
+          ></Selected>
         </Container>
       )}
 
